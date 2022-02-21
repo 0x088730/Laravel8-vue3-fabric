@@ -1,0 +1,67 @@
+body {
+    background-color: #eee
+}
+
+.item-card {
+    max-width: 300px;
+    max-height: 400px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.item-card img {
+    transition: all linear 0.25s;
+}
+
+.item-card .item-title {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+    line-height: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgb(0 0 0 / 40%) 50%);
+}
+
+.item-card .item-type {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgb(0 0 0 / 40%) 50%);
+}
+
+.item-card .item-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.item-card:hover img {
+    filter: grayscale(100%);
+}
+
+.item-card:hover .item-title {
+    bottom: 80px;
+}
+
+.item-card:hover .item-type {
+    bottom: 60px;
+}
+
+.item-card:hover .item-icons {
+    right: 40px;
+}
